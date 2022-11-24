@@ -51,17 +51,19 @@
   .search-container img {
     height: 2rem;
     width: 2rem;
+    margin-top: 1em;
   }
   
   .search-container .search-input {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 0.5em 1em;
     border: none;
     background-color: #ddddddc7;
     height: 1.5rem;
+    margin-top: 0.5em;
   }
   
   .search-container .search-input:focus {
@@ -85,16 +87,13 @@
         -ms-flex-align: center;
             align-items: center;
     gap: 1rem;
+    margin: 0.6em 0.5em;
+    
   }
   
   .profile-container .bell-img {
     height: 1.7rem;
     cursor: pointer;
-  }
-  
-  .profile-container .bell-img:active {
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
   }
   
   .profile-container .user-profile {
@@ -104,24 +103,15 @@
     cursor: pointer;
   }
   
-  .profile-container .user-profile:active {
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
-  }
-  
   .profile-container .user-name {
     margin: 0;
     cursor: pointer;
   }
   
-  .profile-container .user-name:active {
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
-  }
-  
   .welcome-container {
     display: -ms-grid;
     display: grid;
+    margin: 1rem 0.5rem 0rem 0rem;
     -ms-grid-rows: 1fr 1fr;
     -ms-grid-columns: auto 1fr;
         grid-template: 1fr 1fr / auto 1fr;
@@ -167,13 +157,14 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-top: 1em;
   }
   
   .btns-container button {
     cursor: pointer;
     color: white;
-    background-color: #2991FF;
+    background-color: #439eff;
     border: none;
     width: 6rem;
     height: 2rem;
@@ -183,8 +174,7 @@
   }
   
   .btns-container button:active {
-    -webkit-transform: scale(0.97);
-            transform: scale(0.97);
+    background-color: #2991FF;
   }
   
   /* Sidebar */
@@ -195,10 +185,15 @@
     background-color: #56baed;
     display: -ms-grid;
     display: grid;
+    position: sticky;
     -ms-grid-rows: auto auto 1fr;
         grid-template-rows: auto auto 1fr;
     padding: 1rem;
     color: azure;
+  }
+
+  .secondary-links{
+    margin-top: 8em;
   }
   
   .sidebar .logo {
@@ -277,43 +272,38 @@
   .content .projects > h4 {
     font-size: 1.4rem;
     margin: 0;
-    margin-bottom: 0.5rem;
     grid-column: 1 /-1;
-    margin-bottom: -1.5rem;
   }
   
   .content .projects .project {
     border-radius: 13px;
     background: white;
-    -webkit-box-shadow: 0 0 3px 1px black;
-            box-shadow: 0 0 3px 1px black;
+    -webkit-box-shadow: 0 0 3px 0.25px black;
+            box-shadow: 0 0 3px 0.25px black;
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr auto;
     -ms-grid-columns: 1rem 1fr;
         grid-template: 1fr auto / 1rem 1fr;
   }
-  
-  .content .projects .project:hover {
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-  }
-  
+
   .content .projects .project .text-block {
     padding: 1rem 1rem 0;
+    margin: 0;
+    color: rgb(61, 61, 61);
   }
   
   .content .projects .project .text-block .project-name {
     margin: 0;
     font-size: 1.5rem;
+    color: black;
   }
   
   .content .projects .project .color-block {
     grid-row: 1/-1;
     border-radius: 20px 0 0 20px;
     width: 75%;
+    background-color: black;
   }
   
   .content .projects .project .action-block {
@@ -324,6 +314,7 @@
         -ms-flex-pack: end;
             justify-content: flex-end;
     gap: 1rem;
+    margin-top: -3em;
     padding: 1rem;
   }
   
@@ -357,7 +348,7 @@
   
   .content .announ-and-trending > div h4 {
     font-size: 1.4rem;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 0.5rem;
   }
   
